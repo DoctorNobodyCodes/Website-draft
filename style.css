@@ -1,0 +1,94 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a; /* Dark background color */
+  color: #ccc; /* Light text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container styles */
+.container {
+  max-width: 400px;
+  background-color: #333; /* Darker container background */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header styles */
+h1 {
+  color: #fff; /* White header text */
+  margin-bottom: 20px;
+}
+
+/* Label and input styles */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ccc;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #555; /* Darker border color */
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background-color: #444; /* Darker input background */
+  color: #ccc; /* Light text color */
+}
+
+/* Button styles */
+button {
+  background-color: #007bff; /* Blue button color */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Error message styles */
+p#error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Loader animation */
+.loader {
+  border: 4px solid rgba(255, 255, 255, 0.1); /* Lighter border color */
+  border-top: 4px solid #007bff; /* Blue loader color */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+  display: none; /* Initially hidden */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
